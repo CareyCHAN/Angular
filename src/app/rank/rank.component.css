@@ -1,0 +1,26 @@
+.example-header-image {
+  background-image: url('/assets/user_header/1.jpg');
+  background-size: cover;
+}
+.example-card {
+  max-width: 800px;
+}
+
+.homebgc {
+  border: 0;
+  color: #000000;
+  background-color: #F0F0F0;
+  width: 100%;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+}
+
+

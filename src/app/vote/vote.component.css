@@ -1,0 +1,32 @@
+.video-container {
+
+  position: relative;
+
+  padding-bottom: 35.25%;
+
+  padding-top: 30px;
+
+  height: 0;
+
+  overflow: hidden;
+
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+
+    position: absolute;
+
+    top: 0;left: 0;
+
+    width: 1080px;
+
+    height: 600px;
+
+  }
+
+  .homebgc {
+    border: 0;
+    color: #000000;
+    background-color: #F0F0F0;
+    width: 100%;
+  }

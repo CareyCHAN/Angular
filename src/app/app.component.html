@@ -1,0 +1,114 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+  style="background-color: rgba(255, 255, 255, 0.4); height: 114.41pX;" *ngIf="!flag">
+  <a class="navbar-brand font-family" href="" style="margin-right: 30px"><img src="/assets/logo/cocktail.svg" width="30"
+      height="30" class="d-inline-block align-top" alt="">Délicieux</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="">
+          <mat-icon>home</mat-icon>HOME
+        </a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="explore">
+          <mat-icon>search</mat-icon>EXPLORE
+        </a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="share">
+          <mat-icon>favorite_border</mat-icon>SHARE
+        </a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="video">
+          <mat-icon>ondemand_video</mat-icon>VIDEO
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button mat-icon-button  (click)="switch1()">
+    <mat-icon>wb_sunny</mat-icon>
+  </button>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+  style="background-color: rgba(55, 54, 55, 0.9); height: 114.41pX; color: white;" *ngIf="flag">
+  <a class="navbar-brand font-family" href="" style="margin-right: 30px;color: white;"><img src="/assets/logo/cocktail.svg" width="30"
+      height="30" class="d-inline-block align-top" alt="" >Délicieux</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="" style="color: white;">
+          <mat-icon>home</mat-icon>HOME
+        </a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="explore" style="color: white;">
+          <mat-icon>search</mat-icon>EXPLORE
+        </a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="share" style="color: white;"><mat-icon>favorite_border</mat-icon>SHARE</a>
+      </li>
+      <li class="nav-item active" style="margin-right: 70px">
+        <a class="nav-link font-family" href="video" style="color: white;"><mat-icon>ondemand_video</mat-icon>VIDEO</a>
+      </li>
+    </ul>
+  </div>
+  <button mat-icon-button  (click)="switch1()">
+    <mat-icon>brightness_2</mat-icon>
+  </button>
+</nav>
+
+
+<div class="main font-family" *ngIf="!flag">
+  <div style="padding: 500px 30px" class="header">
+    <h1 class="font-colorb"><b>{{headerb}}</b></h1>
+    <h1 class="font-colorp"><b>{{headerp}}</b></h1>
+  </div>
+</div>
+
+<div class="main2 font-family" *ngIf="flag">
+  <div style="padding: 500px 30px" class="header">
+    <h1 class="font-colorb"><b>{{headerb}}</b></h1>
+    <h1 class="font-colorp"><b>{{headerp}}</b></h1>
+  </div>
+</div>
+
+
+
+<router-outlet style="width: 100vw;"></router-outlet>
+
+
+<footer class="footer font-family">
+  <div class="footer-spacing"></div>
+  <div class="footer-links">
+    <div class="row">
+      <span class="col-sm offset-footer"><a href="#">Your Account</a></span>
+      <span class="col-sm custom-link"><a href="#">Having Issues?</a></span>
+      <span class="col-sm custom-link"><a href="#">About Délicieux</a></span>
+    </div>
+  </div>
+  <span class="footer-text">© 2018 - 2019 Délicieux Network - Délicieux. All Rights Reserved</span>
+  <div id="timestamp" style="padding-top: 30px;"></div>
+</footer>

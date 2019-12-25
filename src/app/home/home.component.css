@@ -1,0 +1,21 @@
+.homebgc {
+  height: 550px;
+  border: 0;
+  color: #000000;
+  background-color: #F0F0F0;
+  width: 100%;
+}
+.header-content {
+  color: #616161;
+  max-width: 1300px;
+  position: relative;
+  left: 124px;
+  font-size: 25px;
+  padding-top: 7px;
+}
+.text-line {
+  margin-left: 3%;
+}
+
+
+

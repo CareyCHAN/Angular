@@ -1,0 +1,138 @@
+<div class="homebgc">
+  <div class="row" style="margin-left: 18.5%">
+    <div class="container center" style="margin-bottom: 20px;margin-top: 20px;" *ngFor="let item of list;let i = index">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>xvmzt8991</mat-card-title>
+          <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./assets/cuisine/{{item.name}}.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{item.overview}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon" (click)="like(i)">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <a class="font-family">{{item.like}}個讚</a>
+          <button mat-icon-button color="primary" aria-label="Example icon-button with a share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </mat-card-actions>
+        <form class="example-form" (ngSubmit)="addMessage()">
+          <mat-form-field class="example-full-width">
+            <input type="text" name="content" [(ngModel)]="content" matInput placeholder="留言......">
+          </mat-form-field>
+        </form>
+        <ng-container *ngFor="let message of messages">
+          <p><b>{{message.name}}</b> {{message.content}}</p>
+        </ng-container>
+      </mat-card>
+    </div>
+    <!-- Part1!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="container center" style="margin-top: 20px;margin-bottom: 20px;"
+      *ngFor="let item of list2;let i = index">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>xvmzt8991</mat-card-title>
+          <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./assets/cuisine/{{item.name}}.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{item.overview}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon" (click)="like2(i)">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <a class="font-family">{{item.like}}個讚</a>
+          <button mat-icon-button color="primary" aria-label="Example icon-button with a share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </mat-card-actions>
+        <form class="example-form" (ngSubmit)="addMessage()">
+          <mat-form-field class="example-full-width">
+            <input type="text" name="content" [(ngModel)]="content" matInput placeholder="留言......">
+          </mat-form-field>
+        </form>
+        <ng-container *ngFor="let message of messages">
+          <p><b>{{message.name}}</b> {{message.content}}</p>
+        </ng-container>
+      </mat-card>
+    </div>
+    <!-- Part2!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="container center" style="margin-top: 20px;margin-bottom: 20px;"
+      *ngFor="let item of list3;let i = index">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>xvmzt8991</mat-card-title>
+          <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./assets/cuisine/{{item.name}}.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{item.overview}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon" (click)="like3(i)">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <a class="font-family">{{item.like}}個讚</a>
+          <button mat-icon-button color="primary" aria-label="Example icon-button with a share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </mat-card-actions>
+        <form class="example-form" (ngSubmit)="addMessage()">
+          <mat-form-field class="example-full-width">
+            <input type="text" name="content" [(ngModel)]="content" matInput placeholder="留言......">
+          </mat-form-field>
+        </form>
+        <ng-container *ngFor="let message of messages">
+          <p><b>{{message.name}}</b> {{message.content}}</p>
+        </ng-container>
+      </mat-card>
+    </div>
+    <!-- Part3!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="container center" style="margin-top: 20px;margin-bottom: 20px;"
+      *ngFor="let item of list4;let i = index">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>xvmzt8991</mat-card-title>
+          <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="./assets/cuisine/{{item.name}}.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{item.overview}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon" (click)="like4(i)">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <a class="font-family">{{item.like}}個讚</a>
+          <button mat-icon-button color="primary" aria-label="Example icon-button with a share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </mat-card-actions>
+        <form class="example-form" (ngSubmit)="addMessage()">
+          <mat-form-field class="example-full-width">
+            <input type="text" name="content" [(ngModel)]="content" matInput placeholder="留言......">
+          </mat-form-field>
+        </form>
+        <ng-container *ngFor="let message of messages">
+          <p><b>{{message.name}}</b> {{message.content}}</p>
+        </ng-container>
+      </mat-card>
+    </div>
+  </div>
+</div>
