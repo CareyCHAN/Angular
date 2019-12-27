@@ -1,6 +1,6 @@
 # Overview
 
-This project is my Mutilmedia class final project
+This project is the final work of my multimedia class.
 
 This project does not contain node_modules. Please create a node_modules through the `npm install` command, and it will automatically create node_module to this project.
 
