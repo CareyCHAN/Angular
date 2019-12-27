@@ -2,7 +2,7 @@
 
 This project is my Mutilmedia class final project
 
-The node_modules is missing from the project. Please create a node_modules through the `npm install` command, and it will automatically create node_module to this project.
+This project does not contain node_modules. Please create a node_modules through the `npm install` command, and it will automatically create node_module to this project.
 
 # MultimediaWebsite
 
