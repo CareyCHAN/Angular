@@ -2,7 +2,7 @@
 
 This project is my Mutilmedia class final project
 
-The node_module is missing from the project. Please create a new project through the `ng new` command, and copy paste the node_module to this project.
+The node_modules is missing from the project. Please create a node_modules through the `npm install` command, and it will automatically create node_module to this project.
 
 # MultimediaWebsite
 
