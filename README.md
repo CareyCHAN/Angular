@@ -2,6 +2,8 @@
 
 This project is my Mutilmedia class final project
 
+The node_module is missing from the project. Please create a new project through the ng new command, and copy paste the node_module to this project.
+
 # MultimediaWebsite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
